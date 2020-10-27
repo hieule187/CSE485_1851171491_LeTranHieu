@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+html, body {
+    background: #557fce;
+}
+.form-div {
+    margin: 50px auto 50px;
+    padding: 25px 15px 10px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Lora', serif;
+    background: #294798;
+    color: white;
+
+}
+.form-control:focus {
+    box-shadow: none;
+}
+form p {
+    font-size: .89em;
+}
+.form-div.login {
+    margin-top: 100px;
+}
+.logout {
+    color: red;
+}
