@@ -364,7 +364,7 @@
 </div>
 
 <div class="footer-bottom">
-    &copy; vpkcntt@tlu.edu.vn | Designed by Lê Trần Hiếu
+    &copy; vpkcntt@tlu.edu.vn | Designed by Trần Thế Kha
 </div>
 
 </div>
