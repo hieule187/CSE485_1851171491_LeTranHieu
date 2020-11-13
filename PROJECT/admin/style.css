@@ -1,0 +1,90 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    background: #F5F5F5;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 1px;
+}
+header h3{
+    font-size: 30px;
+}
+.nav{
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+.nav .nav-input{
+    margin-right: 40px;
+   margin-top: -25px;
+}
+.nav-item {
+    display: flex;
+    margin-top: -30px;
+}
+.nav-link i{
+    font-size: 30px;
+    padding-left: 50px;
+}
+.sidebar{
+    margin-top:10px;
+    background: #F5F5F5;
+    width: 82px;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 100px;
+    transition: width .5s;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 1px 4px 1px;
+}
+.sidebar:hover {
+    width: 250px;
+
+}
+span{
+    color: black;
+}
+.sidebar-nav-link i{
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-top: 18px;
+    color: black;
+}
+.sidebar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-nav-item{
+    width: 100%;  
+    padding-top: 7px;
+    padding-bottom:7px ;
+}
+.sidebar-nav-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar-nav-link div{
+    min-width: 82px;
+    height: 50px;
+    position: relative;
+}
+.sidebar-nav-link:hover{
+    background:#D3D3D3 ;
+    text-decoration: none;
+}

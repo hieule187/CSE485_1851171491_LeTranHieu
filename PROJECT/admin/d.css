@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+    height: 70px;
+    background: white;
+}
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.nav-link{
+    float: left;
+   text-align: center;
+   padding: 20px 10px;
+   text-decoration: none;
+   font-size: 17px;
+}
+.nav-link:hover{
+    cursor: pointer;
+}
+.navbar-nav i{
+    font-size: 1.3em;
+}
+.nav-right{
+    margin-left: auto;
+}
+.navbar-search{
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
+.navbar-search input{
+    padding: 12px 50px 12px 50px;
+    width: 100%;
+    border-radius: 30px;
+    background:#EEE9E9;
+ 
+}
+.navbar-search i{
+    position: absolute;
+    top: 50%;
+    right:20px;
+    bottom: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.nav-link .img{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+img{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+
+}
+.nav-link i{
+    margin-top: 10px;
+}
+
+.sidebar{
+    width: 82px;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    margin-top: 65px;
+    z-index: 100px;
+    background:white;
+    transition: width .5s ;
+    overflow: hidden;
+}
+.sidebar:hover{
+    width: 250px;
+}
+.sidebar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.sidebar-nav-item{
+    width: 100%;
+    
+}
+.sidebar-nav-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar-nav-link i{
+    font-size: 1.3rem;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 25px;
+    color: #1C1C1C;
+}
+.sidebar-nav-link div{
+    min-width: 82px;
+    height: 50px;
+    position: relative;
+}
+.sidebar-nav-link span{
+    color:black ;
+}
+.sidebar-nav-link:hover{
+    background:#F5F5F5;
+}
+.content{
+  padding-top: 75px;
+  height: 700px;
+  background-color:#F5F5F5;
+}
