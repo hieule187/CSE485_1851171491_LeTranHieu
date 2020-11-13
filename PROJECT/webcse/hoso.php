@@ -65,10 +65,61 @@
 
 //body elements
 -->
-
-
+<div class="nav">
+        <img src="http://cse.tlu.edu.vn/Portals/0/CSE%20logo%20blue.jpg" width="130" height="76" align="left" >
+        <div class="logo">
+            <h2>Khoa Công Nghệ Thông Tin - Trường Đại học Thủy lợi</h2>
+            <h4>Faculty of Computer Science and Engineering - Thuy Loi University</h4>
+        </div>
+        <img class="fa fa-bars menu-toggle"></img>  
+        <ul class="nav">
+            <li>
+                <a href="#">TRANG CHỦ</a>
+                <ul >
+                    <li><a href="#">Diễn đàn</a></li>                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">NGHIÊN CỨU</a>
+                <ul >
+                    <li><a href="#">Các đề tài, dự án</a></li> 
+                    <li><a href="#">Thông tin seminar</a></li>
+                    <li><a href="#">Công trình công bố</a></li>
+                    <li><a href="#">Các phòng thí nghiệm</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">ĐÀO TẠO</a>
+                <ul >
+                    <li><a href="#">Đào tạo đại học</a></li> 
+                    <li><a href="#">Đào tạo sau đại học</a></li>
+                    <li><a href="#">Chuẩn đầu ra</a></li>
+                    <li><a href="#">Định hướng nghành nghề</a></li>
+                    <li><a href="#">Mô hình đào tạo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">BỘ MÔN</a>
+                <ul >
+                    <li><a href="#">CN phần mềm</a></li> 
+                    <li><a href="#">Hệ thống thông tin</a></li>
+                    <li><a href="#">Khoa học máy tính</a></li>
+                    <li><a href="#">Kỹ thuật máy tính và mạng</a></li>
+                    <li><a href="#">Toán học</a></li>
+                    <li><a href="#">Tin học và kỹ thuật tính toán</a></li>
+                    <li><a href="#">Trung tâm tin học</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TIN TỨC</a>
+                <ul >
+                    <li><a href="#">Sự kiện</a></li> 
+                    <li><a href="#">CSE trên báo</a></li>
+                </ul>
+            </li>        
+</div>
+<br>
 <div class="container-fluid"> 
-
     <div class="row">
         <div class="col-md-2">
             <ul class="menu-links">
@@ -409,6 +460,68 @@
     </div>
 </div>      
 
+<br>
+<div class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-section about">
+                <img src="http://cse.tlu.edu.vn/cse/assets/images/logo.jpg" >
+                <p>
+                    © 2020 Khoa Công nghệ thông tin - Đại học Thủy lợi.<br/>
+                    Địa chỉ: Nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội.
+                </p>
+
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp; (+84)-024 3 5632211<br/></span>
+                    <span><i class="fas fa-envelope"></i>&nbsp; vpkcntt@tlu.edu.vn</span>
+                </div>
+                <br/>
+
+                
+            </div>
+            <div class="footer-section links">
+                <h2>Đường dẫn</h2>
+                <br>
+                <ul>
+                    <a href="#">
+                        <li>Tổ chức</li>
+                    </a>
+                    <a href="#">
+                        <li>Hợp tác nghiên cứu</li>
+                    </a>
+                    <a href="#">
+                        <li>Tuyển dụng</li>
+                    </a>
+                    <a href="#">
+                        <li>Học bổng</li>
+                    </a>
+                    <a href="#">
+                        <li>Logo khoa CNTT</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-form">
+                <h2>Thư phản hồi</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email của bạn...">
+                    <textarea name="message" class="text-input contact-input"placeholder="Lời nhắn..."></textarea>
+                    <button  type="submit" class="btn btn-big">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Gửi
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; vpkcntt@tlu.edu.vn | Designed by Trần Thế Kha
+        </div>
+
+    </div>
 
 
  <!-- Footer -->
