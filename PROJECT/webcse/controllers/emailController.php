@@ -24,17 +24,17 @@ function sendVerificationEmail($userEmail, $token)
     <body>
         <div class="wrapper">
             <p>
-                Thank you for signing up on our website. Please click on the link below to verify your email.
+              Cảm ơn bạn đã đăng ký trên trang web của chúng tôi! Vui lòng nhấp vào liên kết bên dưới để xác minh email của bạn.
             </p>
             <a href="http://localhost/webcse/index_mail.php?token=' . $token . '">
-               Verify your email address
+              Xác minh địa chỉ email của bạn
             </a>
         </div>  
     </body>
     </html>';
 
     // Create a message
-    $message = (new Swift_Message('Verify your email address'))
+    $message = (new Swift_Message('Xác minh địa chỉ email của bạn'))
     ->setFrom(EMAIL)
     ->setTo($userEmail)
     ->setBody($body, 'text/html');

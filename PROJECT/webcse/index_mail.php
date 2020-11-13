@@ -39,21 +39,21 @@
                         ?>
                     </div>    
                <?php endif; ?>
-               <h3>Welcome, <?php echo $_SESSION['username']; ?></h3>
+               <h3>Chào mừng, <?php echo $_SESSION['username']; ?></h3>
 
-               <a href="index_mail.php?logout=1" class="logout">Logout</a>
+               <a href="index_mail.php?logout=1" class="logout">Đăng xuất</a>
 
                <?php if(!$_SESSION['verified']): ?>
                     <div class="alert alert-warning">
-                        You need to verify account.
-                        Sign in to your email account and click on the 
-                        verification link we just emailed you at
+                        Bạn cần xác minh tài khoản.
+                        Hãy đăng nhập vào tài khoản email của bạn và nhấp vào
+                        liên kết xác minh chúng tôi vừa gửi cho bạn tại địa chỉ:
                         <strong><?php echo $_SESSION['email']; ?></strong>
                     </div>
                <?php endif; ?>
 
                <?php if($_SESSION['verified']): ?>
-                    <a href="index.php" class="btn btn-block btn-lg btn-primary">I am verified!</a>
+                    <a href="index.php" class="btn btn-block btn-lg btn-primary">Trang chủ</a>
                <?php endif; ?>
 
             </div>

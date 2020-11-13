@@ -1,6 +1,7 @@
 <?php
     require_once 'controllers/authController.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,18 +18,20 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="ANIfB6uD"></script>
 
     <header>
-        <img src="http://cse.tlu.edu.vn/Portals/0/CSE%20logo%20blue.jpg" width="130" height="76" align="left" >
+        <a href="index.php"><img src="http://cse.tlu.edu.vn/Portals/0/CSE%20logo%20blue.jpg" width="130" height="76" align="left" ></a>
         <div class="logo">
+            <a href="index.php">
             <h2>Khoa Công Nghệ Thông Tin - Trường Đại học Thủy lợi</h2>
             <h4>Faculty of Computer Science and Engineering - Thuy Loi University</h4>
+            </a>
         </div>
         <img class="fa fa-bars menu-toggle"></img>  
         <ul class="nav">
             <li>
-                <a href="#">TRANG CHỦ</a>
+                <a href="index.php">TRANG CHỦ</a>
                 <ul >
                     <li><a href="#">Diễn đàn</a></li> 
-                    <li><a href="#">Nộp hồ sơ online</a></li>
+                    <li><a href="hoso.php">Nộp hồ sơ online</a></li>
                 </ul>
             </li>
             <li>
@@ -75,16 +78,16 @@
                     <a href="#">
                         <i class="fa fa-user"></i>
                         <?php echo $_SESSION['username']; ?>
-                        <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                        <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul >
-                        <li><a href="#">Tùy chọn</a></li>
+                        <li><a href="danhsach.php">Tùy chọn</a></li>
                         <li><a href="index.php?logout=1" class="logout">Đăng xuất</a></li>  
                     </ul>
                 </li>
             <?php else: ?>
                 <li>
-                    <a href="#">THÀNH VIÊN <i class="fa fa-chevron-down" style="font-size: .8em;"></i></a>
+                    <a href="#">THÀNH VIÊN <i class="fa fa-chevron-down"></i></a>
                     <ul >
                         <li><a href="login.php">Đăng nhập</a></li> 
                         <li><a href="signup.php">Đăng ký</a></li> 
@@ -234,7 +237,7 @@
 
         <div class="sidebar">
 
-            <div class="fb-page" data-href="https://www.facebook.com/cse.tlu.edu.vn/" data-tabs="" data-width="409" data-height="550" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cse.tlu.edu.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cse.tlu.edu.vn/">Khoa Công nghệ thông tin- Đại học Thủy lợi</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/cse.tlu.edu.vn/" data-tabs="" data-width="409" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cse.tlu.edu.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cse.tlu.edu.vn/">Khoa Công nghệ thông tin- Đại học Thủy lợi</a></blockquote></div>
 
             <div class="section search">
                 <h2 class="section-title">Tìm kiếm</h2>

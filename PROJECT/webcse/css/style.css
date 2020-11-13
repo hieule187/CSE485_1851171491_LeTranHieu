@@ -96,7 +96,7 @@ header ul li ul li a {
     color: white;
     background: #132972;
 }
-header ul li ul li a.Logout {
+header ul li ul li a.logout {
     color: red;
 }
 header ul li ul li a:hover {
@@ -127,30 +127,30 @@ header * {
 }
 .post-slider .next {
     position: absolute;
-    top: 45%;
-    right: 60px;
+    top: 42%;
+    right: 120px;
     font-size: 4em;
     color: #294798;
     cursor: pointer;
 }
 .post-slider .prev {
     position: absolute;
-    top: 45%;
-    left: 60px;
+    top: 42%;
+    left: 120px;
     font-size: 4em;
     color: #294798;
     cursor: pointer;
 }
 .post-slider .post-wrapper {
-    width: 80%;
-    height: 520px;
-    margin: 30px auto; 
+    width: 70%;
+    height: 440px;
+    margin: 30px auto;
     overflow: hidden;
     padding: 10px 0px 10px 0px;
 }
 .post-slider .post-wrapper .post {
-    height: 500px;
-    width: 300px;
+    height: 420px;
+    width: 00px;
     margin: 0px 10px;
     display: inline-block;
     border-radius: 8px;
@@ -366,3 +366,8 @@ header * {
         margin-left: .5em;
     }
 }
+
+
+
+
+

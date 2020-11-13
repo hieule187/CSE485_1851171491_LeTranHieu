@@ -18,19 +18,19 @@
       
       // validation
       if (empty($username)) {
-        $errors['username'] = "Username required";
+        $errors['username'] = "Hãy nhập tên tài khoản!";
       }
       if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = "Email address is invalid";
+        $errors['email'] = "Email không hợp lệ!";
       }
       if (empty($email)) {
-        $errors['email'] = "Email required";
+        $errors['email'] = "Hãy nhập 1 địa chỉ email!";
       }
       if (empty($password)) {
-        $errors['password'] = "Password required";
+        $errors['password'] = "Hãy nhập mật khẩu!";
       }
       if ($password !== $passwordConf) {
-        $errors['password'] = "The two password do not match";
+        $errors['password'] = "Hai mật khẩu không khớp!";
       }
 
       $emailQuery = "SELECT * FROM users WHERE email=? LIMIT 1";
@@ -42,7 +42,7 @@
       $stmt->close();
 
       if ($userCount > 0) {
-        $errors['email']= "Email already exists";
+        $errors['email']= "Email này đã tồn tại!";
       }
 
       if (count($errors) === 0) {
@@ -65,12 +65,12 @@
             sendVerificationEmail($email, $token);
 
            //set flash message
-           $_SESSION['message'] = "You are now logged in!";
+           $_SESSION['message'] = "Bạn đã đăng nhập!";
            $_SESSION['alert-class'] = "alert-success";
            header('location: index_mail.php');
            exit();
         } else {
-            $errors['db_error'] = "Database error: failed to register";
+            $errors['db_error'] = "Lỗi cơ sở dữ liệu: Không thể đăng ký!";
         }
       }
     }
@@ -83,11 +83,11 @@
       
       // validation
       if (empty($username)) {
-        $errors['username'] = "Username required";
+        $errors['username'] = "Hãy nhập tên tài khoản!";
       }
       
       if (empty($password)) {
-        $errors['password'] = "Password required";
+        $errors['password'] = "Hãy nhập mật khẩu!";
       }
 
       if (count($errors) === 0) {
@@ -105,13 +105,13 @@
           $_SESSION['email'] = $user['email'];
           $_SESSION['verified'] = $user['verified'];
           //set flash message
-          $_SESSION['message'] = "You are now logged in!";
+          $_SESSION['message'] = "Bạn đã đăng nhập!";
           $_SESSION['alert-class'] = "alert-success";
           header('location: index_mail.php');
           exit();
 
         } else {
-          $errors['login_fails'] = "Wrong credentials";
+          $errors['login_fails'] = "Thông tin đăng nhập sai!";
         }
       }
     }
@@ -147,14 +147,14 @@
           $_SESSION['email'] = $user['email'];
           $_SESSION['verified'] = 1;
           //set flash message
-          $_SESSION['message'] = "Your email address was successfully verified!";
+          $_SESSION['message'] = "Địa chỉ email của bạn đã được xác minh thành công!";
           $_SESSION['alert-class'] = "alert-success";
           header('location: index_mail.php');
           exit();
         }
 
       } else {
-        echo 'User not found!';
+        echo 'Không tìm thấy người dùng!';
       }
       
     }
