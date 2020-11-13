@@ -8,7 +8,6 @@ body{
     box-sizing: border-box;
 }
 nav{
-    height: 100px;
     box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 4px 1px;
 }
 nav i{
@@ -31,18 +30,17 @@ nav span{
 .sidebar{
     margin-top: -23px;
     background: #F5F5F5;
+    margin-left: -15px;
     width: 82px;
     left: 0;
     height: 100vh;
-    position: fixed;
-    z-index: 100px;
+    display: block;
     transition: width .5s;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.3) 5px 1px 4px 1px;
 }
 .sidebar:hover {
     width: 250px;
-
 }
 span{
     color: black;
